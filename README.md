@@ -1,27 +1,55 @@
 # CHost
 
-CHost is an open-source utility project focused on host, networking, and system-level tooling.  
-It is designed primarily for developers and advanced users working in Linux- and Android-based environments.
+CHost is an open-source utility project focused on host file management, networking, and system-level tooling.  
+It is designed for developers and advanced users operating in rooted Android and Linux-based environments.
 
-The project aggregates various scripts and web-related components intended to support system-level tasks, experimentation, and custom workflows.
+The project enables controlled modification and management of system host entries while maintaining compatibility with modern root solutions.
 
 ---
 
 ## Overview
 
-CHost serves as a collection of utilities rather than a single-purpose application.  
-Components may vary in functionality, scope, and maturity, and are intended to be used independently or adapted as needed.
+CHost provides tooling to edit and manage the system `hosts` file within a **Magisk-mounted environment**, avoiding direct modification of the read-only system partition.
 
-This repository may evolve over time as new ideas, tools, or approaches are explored.
+In addition, CHost supports managing host values through a **KernelSU (KSU) WebUI interface**, allowing structured and user-friendly interaction with host configurations.
+
+The project is intended for advanced use cases such as:
+- Host-based filtering
+- Network testing
+- Development and experimentation
+- Custom system-level workflows
 
 ---
 
-## Design Philosophy
+## Key Capabilities
 
-- Practical and solution-oriented
-- Minimal abstraction and unnecessary complexity
-- Flexible usage without enforced workflows
-- Focused on technical users rather than end users
+- Edit the system `hosts` file via **Magisk mount overlay**
+- Preserve system integrity by avoiding direct `/system` writes
+- Manage host entries dynamically through **KernelSU WebUI**
+- Modular and flexible design
+- Suitable for experimental and production-oriented setups
+
+---
+
+## Requirements
+
+Before using CHost, ensure the following components are installed:
+
+### Root Framework
+- **Magisk**  
+  https://github.com/topjohnwu/Magisk
+
+or
+
+- **KernelSU**  
+  https://github.com/tiann/KernelSU
+
+### Web Interface (Required for host management via WebUI)
+- **KSU WebUI**  
+  https://github.com/tiann/KernelSU-WebUI
+
+> CHost assumes a properly configured root environment.  
+> Some features may not function without the required modules installed.
 
 ---
 
@@ -37,7 +65,7 @@ You are free to:
 
 As long as you comply with the terms of the license.
 
-See the `LICENSE` file for the full license text.
+See the `LICENSE` file for full details.
 
 ---
 
@@ -51,23 +79,23 @@ Copyright © 2026
 ## Disclaimer
 
 This project is provided **"as is"**, without warranty of any kind.  
-The author is not responsible for any damage, data loss, or system issues resulting from the use of this project.
+The author is not responsible for system instability, data loss, or network issues resulting from improper usage.
 
-Use responsibly, especially when dealing with system or network-level operations.
+Use with caution when modifying system-level configurations such as the `hosts` file.
 
 ---
 
 ## Contributions
 
-Contributions, suggestions, and improvements are welcome.
+Contributions and improvements are welcome.
 
-Please ensure that any contribution:
-- Is clearly explained
-- Does not break existing functionality
-- Remains consistent with the project's scope and license
+Please ensure that all contributions:
+- Are clearly described
+- Do not introduce unsafe system behavior
+- Remain consistent with the project scope and license
 
 ---
 
 ## Contact
 
-For issues, feature requests, or discussion, please use the GitHub Issues section of this repository.
+For bug reports, feature requests, or discussion, please use the GitHub Issues section of this repository.
