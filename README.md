@@ -98,7 +98,7 @@ See the `LICENSE` file for full details.
 ## Attribution
 
 Copyright © 2026  
-**ARe D**
+**ARe D Soft**
 
 ---
 
