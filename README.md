@@ -24,10 +24,36 @@ The project is intended for advanced use cases such as:
 ## Key Capabilities
 
 - Edit the system `hosts` file via **Magisk mount overlay**
-- Preserve system integrity by avoiding direct `/system` writes
+- Preserve system integrity by avoiding direct writes to `/system`
 - Manage host entries dynamically through **KernelSU WebUI**
-- Modular and flexible design
-- Suitable for experimental and production-oriented setups
+- Automatic backup of host configurations
+- Execution logging for traceability and debugging
+- Modular and flexible design suitable for advanced workflows
+
+---
+
+## Backup and Logging
+
+CHost automatically maintains backups and execution logs to ensure recoverability and transparency.
+
+### Backup Location
+All backups and execution logs are stored under: `/storage/emulated/0/chost`
+
+(or equivalently accessible as `internal_storage/chost` depending on file manager and Android version)
+
+### Backup Behavior
+- The original `hosts` file is backed up before any modification
+- Multiple backup snapshots may be retained depending on configuration
+- Backups can be manually restored in case of misconfiguration or system issues
+
+### Execution Logs
+- Each execution records operational details and status
+- Logs are intended for:
+  - Debugging
+  - Issue reporting
+  - Emergency recovery analysis
+
+In emergency scenarios, these backups allow you to **restore a known-good state** without reflashing or reinstalling modules.
 
 ---
 
@@ -44,7 +70,7 @@ or
 - **KernelSU**  
   https://github.com/tiann/KernelSU
 
-### Web Interface (Required for host management via WebUI)
+### Web Interface (Required for WebUI-based host management)
 - **KSU WebUI**  
   https://github.com/tiann/KernelSU-WebUI
 
