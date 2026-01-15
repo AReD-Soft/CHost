@@ -1,6 +1,6 @@
 # CHost
 
-CHost is an open-source utility project focused on host file management, networking, and system-level tooling.  
+CHost is an Magisk or Kernel SU module utility project focused on host file management, networking, and system-level tooling.  
 It is designed for developers and advanced users operating in rooted Android and Linux-based environments.
 
 The project enables controlled modification and management of system host entries while maintaining compatibility with modern root solutions.
