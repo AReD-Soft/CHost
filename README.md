@@ -23,8 +23,8 @@ The project is intended for advanced use cases such as:
 
 ## Dashboard Preview
 
-<p align="center">
-![CHost main page](https://github.com/user-attachments/assets/908badc4-829b-46ab-b0c9-0f2b4a984146)
+<p align="left">
+<img src="https://github.com/user-attachments/assets/908badc4-829b-46ab-b0c9-0f2b4a984146" width="400">
 </p>
 
 ---
