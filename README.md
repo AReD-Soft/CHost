@@ -18,6 +18,14 @@ The project is intended for advanced use cases such as:
 - Network testing
 - Development and experimentation
 - Custom system-level workflows
+  
+---
+
+## Dashboard Preview
+
+<p align="center">
+![CHost main page](https://github.com/user-attachments/assets/908badc4-829b-46ab-b0c9-0f2b4a984146)
+</p>
 
 ---
 
