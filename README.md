@@ -82,6 +82,7 @@ or
 - **KSU WebUI**  
   https://github.com/tiann/KernelSU-WebUI
 
+> Even if you don't install KernelSU root or only have Magisk root, you can still use the WebUI because the interface is only available through KSU WebUI.
 > CHost assumes a properly configured root environment.  
 > Some features may not function without the required modules installed.
 
